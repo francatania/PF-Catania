@@ -19,6 +19,8 @@ html {
     scroll-behavior: smooth;
 }
 
+/* INICIO MAIN */
+
 /* inicio NAVBAR */
 
 header{
@@ -255,6 +257,118 @@ footer{
 }
 
 /* fin FOOTER */
+
+/* FIN MAIN */
+
+/* INICIO CLASES */
+
+/* jumbotron clases */
+.jumbotronClases{
+    background-image: linear-gradient(#b8b50009, #07728848), url(./assets/img/clase_guitBYN.jpg);
+    height: calc(100vh - 78.5px);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    margin-bottom: 0;
+}
+
+.callClases h1{
+    text-shadow: #141414 2px 2px 2px;
+}
+
+.callClases p{
+    color: white;
+    text-shadow: #141414 2px 2px 2px;
+    font-size: 20px;
+}
+.tipoClases{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "intLeft img1 img2"
+    "prodLeft img3 img4"
+    "teoLeft img5 img6";
+    gap: 20px;
+    padding: 20px;
+}
+
+.imgClases{
+    height: 300px;
+    box-shadow: #141414 2px 2px 2px;
+}
+
+.img1{
+    background-image: url(./assets/img/bajo.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-area: img1;
+}
+
+.img2{
+    background-image: url(./assets/img/piano.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-area: img2;
+}
+
+.img3{
+    background-image: url(./assets/img/studio.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-area: img3; 
+}
+
+.img4{
+    background-image: url(./assets/img/microfono.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-area: img4;
+}
+
+.img5{
+    background-image: url(./assets/img/teoria1.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-area: img5;
+}
+
+.img6{
+    background-image: url(./assets/img/teoria2.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-area: img6;
+}
+
+.headClases{
+    color: #B8B500;
+    font-weight: 700;
+    text-shadow: #141414 1px 1px 1px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.pClases{
+    font-size: 25px;
+    text-align: center;
+}
+
+.listInst{
+    list-style: none;
+    font-size: 25px;
+    text-align: center;
+}
+
+.listTeo{
+    list-style: none;
+    font-size: 25px;
+    text-align: center;
+}
+
+/* FIN CLASES */
 
 @media (min-width: 360px) and (max-width:912px){
     
