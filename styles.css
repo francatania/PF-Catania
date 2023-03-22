@@ -163,7 +163,6 @@ header{
 .separadorAlumnos{
     width: 100%;
     height: 100px;
-    background-color: #343a40;
 }
 
 /* inicio ALUMNOS */
@@ -171,12 +170,13 @@ header{
 .alumnos{
     height: auto;
     margin-bottom: 10px;
+    background-color:rgba(52, 58, 64, 0.192)  ;
 }
 
 
 .headAlumnos h2{
-    color: #B8B500;
-    text-shadow: #141414 1px 1px 1px;
+    color: #141414;
+    font-weight: 100;
     font-size: 90px; 
     text-align: center;
     margin-top: 20px;
@@ -306,5 +306,5 @@ footer{
         font-size: 40px; 
     }
   
-
 }
+
