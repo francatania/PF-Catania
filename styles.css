@@ -19,9 +19,9 @@ html {
     scroll-behavior: smooth;
 }
 
-/* INICIO MAIN */
+/* INICIO HOME */
 
-/* inicio NAVBAR */
+    /* inicio NAVBAR */
 
 header{
     background-color: #f5f5f5;
@@ -57,9 +57,9 @@ header{
     font-weight: 500;
 }
 
-/* fin NAVBAR */
+    /* fin NAVBAR */
 
-/* inicio MAIN */
+    /* inicio MAIN */
 .jumbotron{
     background-image: linear-gradient(#b8b50009, #07728848), url(./assets/img/bateria.jpg);
     height: calc(100vh - 78.5px);
@@ -115,9 +115,9 @@ header{
     
 }
 
-/* fin MAIN */
+    /* fin MAIN */
 
-/* inicio NOSOTROS */
+    /* inicio NOSOTROS */
 
 .separadorSomos{
     height: 65px;
@@ -161,14 +161,14 @@ header{
     padding: 30px;
 }
 
-/* fin NOSOTROS */
+    /* fin NOSOTROS */
 
 .separadorAlumnos{
     width: 100%;
     height: 100px;
 }
 
-/* inicio ALUMNOS */
+    /* inicio ALUMNOS */
 
 .alumnos{
     height: auto;
@@ -230,9 +230,9 @@ header{
     
 }
 
-/* fin ALUMNOS */
+    /* fin ALUMNOS */
 
-/* inicio FOOTER */
+    /* inicio FOOTER */
 
 footer{
     padding: 20px;
@@ -249,160 +249,26 @@ footer{
     gap: 40px;
 }
 
-.redes i{
+.redes a{
     transition: 0.5s;
+    list-style: none;
+    text-decoration: none;
+    color: #141414;
 }
 
-.redes i:hover{
+.redes a:hover{
     color: #077288;
     font-size: 45px ;
     transition: all 0.5s;
 }
 
-/* fin FOOTER */
+    /* fin FOOTER */
 
-/* FIN MAIN */
-
-/* INICIO CLASES */
-
-/* jumbotron clases */
-.jumbotronClases{
-    background-image: linear-gradient(#b8b50009, #07728848), url(./assets/img/clase_guitBYN.jpg);
-    height: calc(100vh - 78.5px);
-    background-position: center;
-    background-size: cover;
-    color: white;
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    margin-bottom: 0;
-}
-
-.callClases{
-    background-color: #14141470;
-}
-
-.callClases h1{
-    text-shadow: #141414 2px 2px 2px;
-}
-
-.callClases p{
-    color: white;
-    text-shadow: #141414 2px 2px 2px;
-    font-size: 20px;
-}
-.tipoClases{
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
-}
-
-.imgClases{
-    height: 300px;
-    box-shadow: #141414 2px 2px 2px;
-}
-
-.instrumentoLeft{
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
-
-.produccionLeft{
-    grid-column: 1/2;
-    grid-row: 2/3;
-}
-
-.teoriaLeft{
-    grid-column: 1/2;
-    grid-row: 3/4;
-}
-
-.img1{
-    background-image: url(./assets/img/bajo.jpg);
-    background-position: center;
-    background-size: cover;
-    grid-column: 2/3;
-    grid-row: 1/2;
-    
-}
-
-.img2{
-    background-image: url(./assets/img/piano.jpg);
-    background-position: center;
-    background-size: cover;
-    grid-column: 3/4;
-    grid-row: 1/2;
-    
-}
-
-.img3{
-    background-image: url(./assets/img/studio.jpg);
-    background-position: center;
-    background-size: cover;
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
-
-.img4{
-    background-image: url(./assets/img/microfono.jpg);
-    background-position: center;
-    background-size: cover;
-    grid-column: 3/4;
-    grid-row: 2/3;
-}    
-  
-
-.img5{
-    background-image: url(./assets/img/teoria1.jpg);
-    background-position: center;
-    background-size: cover;
-    grid-column: 2/3;
-    grid-row: 3/4;
-  
-}
-
-.img6{
-    background-image: url(./assets/img/teoria2.jpg);
-    background-position: center;
-    background-size: cover;
-    grid-column: 3/4;
-    grid-row: 3/4;
-}
-
-.headClases{
-    color: #B8B500;
-    font-weight: 700;
-    text-shadow: #141414 1px 1px 1px;
-    font-size: 50px;
-    text-align: center;
-}
-
-.pClases{
-    font-size: 25px;
-    text-align: center;
-}
-
-.listInst{
-    list-style: none;
-    font-size: 25px;
-    text-align: center;
-}
-
-.listTeo{
-    list-style: none;
-    font-size: 25px;
-    text-align: center;
-}
-
-/* FIN CLASES */
-
+/* FIN HOME */
 
 /* inicio GALERIA */
 
+    /* inicio Header */
 .headerGal{
     background-color: #f5f5f5;
     width: 100%;
@@ -412,6 +278,9 @@ footer{
     top: 0;    
     
 }
+    /* fin Header */
+
+    /* inicio Jumbotron */
 
 .jumbotronGaleria{
     background-image: linear-gradient(#b8b50009, #07728848), url(./assets/img/galeriapic2.jpg);
@@ -426,9 +295,9 @@ footer{
 }
 
 .callGaleria{
-    grid-row:2/4;
+    height: auto;
     grid-column: 6/10;
-    background-color: #1414143a
+    background-color: #14141491;
 
 }
 
@@ -440,6 +309,10 @@ footer{
     font-size: 25px;
     text-shadow: #141414 2px 2px;
 }
+
+    /* fin Jumbotron */
+
+    /* inicio Contenedor Galeria */
 
 .contenedorGaleria{
     width: 100%;
@@ -529,9 +402,9 @@ footer{
     grid-area: img12;
     background-image: url(./assets/img/galeria/tecladista.jpg);
 }
+
+    /* inicio Contenedor Galeria */
 /* fin GALERIA */
-
-
 
 
 
@@ -540,48 +413,18 @@ footer{
 /* MEDIA QUERIES */
 
 @media only screen and (min-width:360px) and (max-width:560px){
-    .tipoClases{
-        grid-template-rows: 280px 1fr 390px 1fr 390px 1fr!important;
-    }
-    
-    .instrumentoLeft h2{
-        font-size: 40px;
-    }
-
-    .instrumentoLeft ul{
-        font-size: 25px;
-    }
-
-    .produccionLeft h2{
-        font-size: 40px;
-    }
-
-    .produccionLeft p{
-        font-size: 25px;
-    }
-
-    .teoriaLeft h2{
-        font-size: 40px;
-    }
-
-    .teoriaLeft p{
-        font-size: 25px;
-    }
-
-    .teoriaLeft ul{
-        font-size: 25px;
-    }
 
     /* inicio GALERIA */
     .imgGal:hover{
         transform: scale(1.20);
         transition: all 0.7s;
     }
+
     /* fin GALERIA */
 }
 
 @media only screen and (max-width:579px){
-    /* GALERIA */
+    /* inicio GALERIA */
     .contenedorGaleria{
         height: auto;
         grid-template-columns: 1fr;
@@ -601,23 +444,29 @@ footer{
         "img12 img12";
         padding: 20px;
     }
-}
+    /* fin GALERIA */
+}   
 
 @media only screen and (min-width: 360px) and (max-width:912px){  
-    /* MAIN */
+    /* inicio HOME */
+        /* inicio MAIN */
     .call{
         grid-column: 2/10;
         grid-row: 3/4;
         border: solid 1px #141414;
-        background-color: #1414143a;
         padding: 20px;
+    }
+
+    .callHome{
+        background-color: #1414143a;
     }
     
     .call h1{
         font-size: 40px;
     }
-  
-    /* NOSOTROS */
+        /* fin MAIN */
+
+        /* inicio NOSOTROS */
 
     .nosotros{
         height: min-content;
@@ -642,7 +491,9 @@ footer{
         margin-top: 20px;
     }
 
-    /* ALUMNOS */
+        /* fin NOSOTROS */
+
+        /* inicio ALUMNOS */
 
     .alumnos{
         height: auto;
@@ -652,81 +503,15 @@ footer{
     .headAlumnos h2{
         font-size: 60px; 
     }
+
+        /* fin ALUMNOS */
   
-    /* CLASES */
-
-    .tipoClases{
-        height: auto;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(6, 1fr);
-        gap: 20px;
-        padding: 20px;
-    }
-    
-    .imgClases{
-        height: 300px;
-        box-shadow: #141414 2px 2px 2px;
-    }
-    
-        
-    .instrumentoLeft{
-        grid-column: 1/3;
-        grid-row: 1/2;
-    }
-
-    .img1{
-        grid-column: 1/2;
-        grid-row: 2/3;
-        
-    }
-
-    .img2{
-        grid-column: 2/3;
-        grid-row: 2/3;
-        
-    }
-
-    .produccionLeft{
-        grid-column: 1/3;
-        grid-row: 3/4;
-        padding-top: 50px;
-      
-    }
-
-    .img3{
-        grid-column: 1/2;
-        grid-row: 4/5;
-    }
-
-    .img4{
-        grid-column: 2/3;
-        grid-row: 4/5;
-    } 
-
-    .teoriaLeft{
-        grid-column: 1/3;
-        grid-row: 5/6;
-        padding-top: 40px;
-    }
-
-    .img5{
-        grid-column: 1/2;
-        grid-row: 6/7;
-    }
-
-    .img6{
-        grid-column: 2/3;
-        grid-row: 6/7;
-    }   
 
     /* inicio GALERIA */
 
     .callGaleria{
-        background-color: #14141471;
+        background-color: #141414bd;
     }
-    
 
     /* fin GALERIA */
 }
