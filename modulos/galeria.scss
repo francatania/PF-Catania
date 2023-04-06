@@ -1,0 +1,139 @@
+/* inicio GALERIA */
+
+    /* inicio Header */
+.headerGal{
+    background-color: #f5f5f5;
+    width: 100%;
+    box-shadow: #141414 1px 1px 3px;
+    z-index: 9999;
+    position: sticky;
+    top: 0;    
+    
+}
+    /* fin Header */
+
+    /* inicio Jumbotron */
+
+.jumbotronGaleria{
+    background-image: linear-gradient(#b8b50009, #07728848), url(./assets/img/galeriapic2.jpg);
+    height: calc(100vh - 78.5px);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    margin-bottom: 0;
+}
+
+.callGaleria{
+    height: auto;
+    grid-column: 6/10;
+    background-color: #14141491;
+
+}
+
+.callGaleria h1{
+    font-size: 60px;
+}
+
+.callGaleria p{
+    font-size: 25px;
+    text-shadow: #141414 2px 2px;
+}
+
+    /* fin Jumbotron */
+
+    /* inicio Contenedor Galeria */
+
+.contenedorGaleria{
+    width: 100%;
+    height: 1400px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "img1 img1 img3 img7"
+    "img5 img10 img10 img7"
+    "img9 img10 img10 img12"
+    "img4 img8 img2 img2"
+    "img6 img11 img2 img2";
+    gap: 20px;
+    background-color: #DEDEDE;
+    padding: 80px;
+}
+
+.imgGal{
+    background-position: center;
+    background-size: cover;
+    transform: scale(1);
+    border-radius: 10px;
+}
+
+.imgGal:hover{
+    transform: scale(1.10);
+    transition: all 0.7s;
+}
+
+.imgGal1{
+    grid-area: img1;
+    background-image: url(./assets/img/galeria/bajo_ensamble.jpg);
+}
+
+.imgGal2{
+    grid-area: img2;
+    background-image: url(./assets/img/galeria/cantante2.jpg);
+}
+
+.imgGal3{
+    grid-area: img3;
+    background-image: url(./assets/img/galeria/guitarrista.jpg);
+}
+
+.imgGal4{
+    grid-area: img4;
+    background-image: url(./assets/img/galeria/cantante.jpg);
+}
+
+.imgGal5{
+    grid-area: img5;
+    background-image: url(./assets/img/galeria/bajista.jpg);
+}
+
+.imgGal6{
+    grid-area: img6;
+    background-image: url(./assets/img/galeria/bajista2.jpg);
+}
+
+.imgGal7{
+    grid-area: img7;
+    background-image: url(./assets/img/galeria/cantante_3.jpg);
+}
+
+.imgGal8{
+    grid-area: img8;
+    background-image: url(./assets/img/galeria/musicos.jpg);
+}
+
+.imgGal9{
+    grid-area: img9;
+    background-image: url(./assets/img/galeria/tres.jpg);
+}
+
+.imgGal10{
+    grid-area: img10;
+    background-image: url(./assets/img/galeria/publico.jpg);
+}
+
+.imgGal11{
+    grid-area: img11;
+    background-image: url(./assets/img/galeria/publico2.jpg);
+}
+
+.imgGal12{
+    grid-area: img12;
+    background-image: url(./assets/img/galeria/tecladista.jpg);
+}
+
+    /* inicio Contenedor Galeria */
+/* fin GALERIA */

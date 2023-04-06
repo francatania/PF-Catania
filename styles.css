@@ -1,537 +1,468 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Lato:ital,wght@0,100;0,300;1,100;1,900&family=Montserrat:ital,wght@0,200;0,300;1,300&family=Oswald:wght@200;300;700&family=Quicksand:wght@300;400&family=Roboto+Condensed:ital,wght@1,300&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Lato:ital,wght@0,100;0,300;1,100;1,900&family=Montserrat:ital,wght@0,200;0,300;1,300&family=Oswald:wght@200;300;700&family=Quicksand:wght@300;400&family=Roboto+Condensed:ital,wght@1,300&display=swap");
 /* font-family: 'Climate Crisis', cursive;
 font-family: 'Lato', sans-serif;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Oswald', sans-serif;
 font-family: 'Quicksand', sans-serif;
 font-family: 'Roboto Condensed', sans-serif;*/
-
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 /* INICIO HOME */
-
-    /* inicio NAVBAR */
-
-header{
-    background-color: #f5f5f5;
-    width: 100%;
-    box-shadow: #141414 1px 1px 3px;
-    z-index: 9999;
-    position: sticky;
-    top: 0;    
+/* inicio NAVBAR */
+header {
+  background-color: #f5f5f5;
+  width: 100%;
+  box-shadow: #141414 1px 1px 3px;
+  z-index: 9999;
+  position: sticky;
+  top: 0;
 }
 
-.nameCompany{
-    font-size: 30px; 
-    color: #141414!important;
-    text-transform: uppercase;
+.nameCompany {
+  font-size: 30px;
+  color: #141414 !important;
+  text-transform: uppercase;
 }
 
-.logo{
-    color: #B8B500;
-    text-shadow:  2px 2px 2px #141414;
-    font-style: italic;
-    font-size: 35px;
+.logo {
+  color: #B8B500;
+  text-shadow: 2px 2px 2px #141414;
+  font-style: italic;
+  font-size: 35px;
 }
 
-
-.lista{
-    display: flex;
-    justify-content: flex-end;
+.lista {
+  display: flex;
+  justify-content: flex-end;
 }
 
-.nav-link{
-    color:#141414!important;
-    font-size: 25px;
-    font-weight: 500;
+.nav-link {
+  color: #141414 !important;
+  font-size: 25px;
+  font-weight: 500;
 }
 
-    /* fin NAVBAR */
-
-    /* inicio MAIN */
-.jumbotron{
-    background-image: linear-gradient(#b8b50009, #07728848), url(./assets/img/bateria.jpg);
-    height: calc(100vh - 78.5px);
-    background-position: center;
-    background-size: cover;
-    color: white;
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    margin-bottom: 0;
+/* fin NAVBAR */
+/* inicio MAIN */
+.jumbotron {
+  background-image: linear-gradient(rgba(184, 181, 0, 0.0352941176), rgba(7, 114, 136, 0.2823529412)), url(./assets/img/bateria.jpg);
+  height: calc(100vh - 78.5px);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  margin-bottom: 0;
 }
 
-.call{
-    grid-column: 5/10;
+.call {
+  grid-column: 5/10;
+  grid-row: 3/4;
+  border: solid 1px #141414;
+  background-color: rgba(20, 20, 20, 0.2274509804);
+  padding: 30px;
+}
+
+.call h1 {
+  font-size: 60px;
+  text-shadow: #141414 1px 1px 2px;
+}
+
+.call span {
+  font-style: italic;
+}
+
+.call p {
+  padding: 20px;
+  font-size: 18px;
+  color: #dfdbdb;
+  text-shadow: #141414 1px 1px;
+}
+
+.call a {
+  font-size: 20px;
+  color: #DEDEDE;
+  background-color: #141414;
+  margin-left: 0px;
+  padding: 5px;
+  transition: all 0.5s;
+  text-decoration: none;
+  border-radius: 5%;
+}
+
+.call a:hover {
+  background-color: #B8B500;
+  color: #141414;
+  font-size: 22px;
+  transition: all 0.5s;
+}
+
+/* fin MAIN */
+/* inicio NOSOTROS */
+.separadorSomos {
+  height: 65px;
+  width: 100%;
+}
+
+#link {
+  border: white;
+  /* Esto es para que al tocar en el boton "mas info" el header no tape la seccion "Nosotros" */
+}
+
+.separadorNosotros {
+  width: 100%;
+  height: 78.5px;
+}
+
+.nosotros {
+  height: auto;
+  margin-top: 0px;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-bottom: 100px;
+}
+
+.nright {
+  background-image: url(./assets/img/nosotros2.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+}
+
+.nleft h2 {
+  color: #B8B500;
+  text-shadow: #141414 1px 1px 1px;
+  font-size: 70px;
+}
+
+.nleft p {
+  font-size: 20px;
+  padding: 30px;
+}
+
+/* fin NOSOTROS */
+.separadorAlumnos {
+  width: 100%;
+  height: 100px;
+}
+
+/* inicio ALUMNOS */
+.alumnos {
+  height: auto;
+  margin-bottom: 10px;
+  background: linear-gradient(45deg, white, rgba(7, 114, 136, 0.568627451));
+  margin-bottom: 50px;
+}
+
+.headAlumnos h2 {
+  color: #141414;
+  font-weight: 100;
+  font-size: 90px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.cardsAlumnos {
+  margin-top: 20px;
+  height: 500px;
+}
+
+.cardsAlumnos .nombre {
+  text-align: center;
+  font-size: 40px;
+}
+
+.cardsAlumnos .descripcion {
+  text-align: center;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.cardsAlumnos .img-fluid {
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  box-shadow: 2px 2px 3px #141414;
+  border-radius: 100%;
+}
+
+.fran {
+  background-image: url(./assets/img/alumnos/alumno1.jpeg);
+}
+
+.vicky {
+  background-image: url(./assets/img/alumnos/vicky.jpeg);
+}
+
+.tomi {
+  background-image: url(./assets/img/alumnos/alumno2.jpeg);
+}
+
+.lauti {
+  background-image: url(./assets/img/alumnos/alumno4.jpeg);
+}
+
+/* fin ALUMNOS */
+/* inicio FOOTER */
+footer {
+  padding: 20px;
+  color: #f3f3f3;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.redes {
+  text-align: center;
+  font-size: 40px;
+  gap: 40px;
+}
+
+.redes a {
+  transition: 0.5s;
+  list-style: none;
+  text-decoration: none;
+  color: #141414;
+}
+
+.redes a:hover {
+  color: #077288;
+  font-size: 45px;
+  transition: all 0.5s;
+}
+
+/* fin FOOTER */
+/* FIN HOME */
+/* inicio GALERIA */
+/* inicio Header */
+.headerGal {
+  background-color: #f5f5f5;
+  width: 100%;
+  box-shadow: #141414 1px 1px 3px;
+  z-index: 9999;
+  position: sticky;
+  top: 0;
+}
+
+/* fin Header */
+/* inicio Jumbotron */
+.jumbotronGaleria {
+  background-image: linear-gradient(rgba(184, 181, 0, 0.0352941176), rgba(7, 114, 136, 0.2823529412)), url(./assets/img/galeriapic2.jpg);
+  height: calc(100vh - 78.5px);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  margin-bottom: 0;
+}
+
+.callGaleria {
+  height: auto;
+  grid-column: 6/10;
+  background-color: rgba(20, 20, 20, 0.568627451);
+}
+
+.callGaleria h1 {
+  font-size: 60px;
+}
+
+.callGaleria p {
+  font-size: 25px;
+  text-shadow: #141414 2px 2px;
+}
+
+/* fin Jumbotron */
+/* inicio Contenedor Galeria */
+.contenedorGaleria {
+  width: 100%;
+  height: 1400px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas: "img1 img1 img3 img7" "img5 img10 img10 img7" "img9 img10 img10 img12" "img4 img8 img2 img2" "img6 img11 img2 img2";
+  gap: 20px;
+  background-color: #DEDEDE;
+  padding: 80px;
+}
+
+.imgGal {
+  background-position: center;
+  background-size: cover;
+  transform: scale(1);
+  border-radius: 10px;
+}
+
+.imgGal:hover {
+  transform: scale(1.1);
+  transition: all 0.7s;
+}
+
+.imgGal1 {
+  grid-area: img1;
+  background-image: url(./assets/img/galeria/bajo_ensamble.jpg);
+}
+
+.imgGal2 {
+  grid-area: img2;
+  background-image: url(./assets/img/galeria/cantante2.jpg);
+}
+
+.imgGal3 {
+  grid-area: img3;
+  background-image: url(./assets/img/galeria/guitarrista.jpg);
+}
+
+.imgGal4 {
+  grid-area: img4;
+  background-image: url(./assets/img/galeria/cantante.jpg);
+}
+
+.imgGal5 {
+  grid-area: img5;
+  background-image: url(./assets/img/galeria/bajista.jpg);
+}
+
+.imgGal6 {
+  grid-area: img6;
+  background-image: url(./assets/img/galeria/bajista2.jpg);
+}
+
+.imgGal7 {
+  grid-area: img7;
+  background-image: url(./assets/img/galeria/cantante_3.jpg);
+}
+
+.imgGal8 {
+  grid-area: img8;
+  background-image: url(./assets/img/galeria/musicos.jpg);
+}
+
+.imgGal9 {
+  grid-area: img9;
+  background-image: url(./assets/img/galeria/tres.jpg);
+}
+
+.imgGal10 {
+  grid-area: img10;
+  background-image: url(./assets/img/galeria/publico.jpg);
+}
+
+.imgGal11 {
+  grid-area: img11;
+  background-image: url(./assets/img/galeria/publico2.jpg);
+}
+
+.imgGal12 {
+  grid-area: img12;
+  background-image: url(./assets/img/galeria/tecladista.jpg);
+}
+
+/* inicio Contenedor Galeria */
+/* fin GALERIA */
+/* MEDIA QUERIES */
+@media only screen and (min-width: 360px) and (max-width: 560px) {
+  /* inicio GALERIA */
+  .imgGal:hover {
+    transform: scale(1.2);
+    transition: all 0.7s;
+  }
+  /* fin GALERIA */
+}
+@media only screen and (max-width: 579px) {
+  /* inicio GALERIA */
+  .contenedorGaleria {
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 250px);
+    grid-template-areas: "img1 img1" "img7 img7" "img6 img6" "img4 img4" "img11 img11" "img10 img10" "img3 img3" "img9 img9" "img2 img2" "img5 img5" "img8 img8" "img12 img12";
+    padding: 20px;
+  }
+  /* fin GALERIA */
+}
+@media only screen and (min-width: 360px) and (max-width: 912px) {
+  /* inicio HOME */
+  /* inicio MAIN */
+  .call {
+    grid-column: 2/10;
     grid-row: 3/4;
     border: solid 1px #141414;
-    background-color: #1414143a;
-    padding: 30px;
-}
-
-.call h1{
-    font-size: 60px;
-    text-shadow: #141414 1px 1px 2px;
-}
-
-.call span{
-    font-style: italic;
-}
-
-.call p{
     padding: 20px;
-    font-size: 18px;
-    color: #dfdbdb;
-    text-shadow: #141414 1px 1px;
-}
-
-.call a{
+  }
+  .callHome {
+    background-color: rgba(20, 20, 20, 0.2274509804);
+  }
+  .call h1 {
+    font-size: 40px;
+  }
+  /* fin MAIN */
+  /* inicio NOSOTROS */
+  .nosotros {
+    height: min-content;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .nright {
+    height: 250px;
+  }
+  .nleft h2 {
+    font-size: 45px;
+  }
+  .nleft p {
     font-size: 20px;
-    color: #DEDEDE;
-    background-color: #141414;
-    margin-left: 0px;
-    padding: 5px;
-    transition: all 0.5s;
-    text-decoration: none;
-    border-radius: 5%;
-}
-
-.call a:hover{
-    background-color: #B8B500;
-    color: #141414;
-    font-size: 22px;
-    transition: all 0.5s;
-    
-}
-
-    /* fin MAIN */
-
-    /* inicio NOSOTROS */
-
-.separadorSomos{
-    height: 65px;
-    width: 100%;
-}
-
-#link{ 
-    border: white; 
-    /* Esto es para que al tocar en el boton "mas info" el header no tape la seccion "Nosotros" */
-}
-
-.separadorNosotros{
-    width: 100%;
-    height: 78.5px;
-
-}
-
-.nosotros{
-    height: auto;
-    margin-top: 0px;
-    padding-left: 100px;
-    padding-right: 100px;
-    margin-bottom: 100px;
-}
-
-.nright{
-    background-image: url(./assets/img/nosotros2.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 400px;
-}
-
-.nleft h2{
-    color: #B8B500;
-    text-shadow: #141414 1px 1px 1px;
-    font-size: 70px;  
-}
-
-.nleft p{
-    font-size: 20px;
-    padding: 30px;
-}
-
-    /* fin NOSOTROS */
-
-.separadorAlumnos{
-    width: 100%;
-    height: 100px;
-}
-
-    /* inicio ALUMNOS */
-
-.alumnos{
+    padding: 10px;
+  }
+  .separadorAlumnos {
+    margin-top: 20px;
+  }
+  /* fin NOSOTROS */
+  /* inicio ALUMNOS */
+  .alumnos {
     height: auto;
     margin-bottom: 10px;
-    background: linear-gradient(45deg, white, #07728891);
-    margin-bottom: 50px;
-}
-
-
-.headAlumnos h2{
-    color: #141414;
-    font-weight: 100;
-    font-size: 90px; 
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
-}
-
-.cardsAlumnos{
-    margin-top: 20px;
-    height: 500px;
-    
-}
-
-.cardsAlumnos .nombre{
-    text-align: center;
-    font-size: 40px;
-}
-
-.cardsAlumnos .descripcion{
-    text-align: center;
-    padding: 10px;
-    font-size: 15px;
-}
-
-.cardsAlumnos .img-fluid{
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-    box-shadow: 2px 2px 3px #141414;
-    border-radius: 100%;
-}
-
-.fran{
-    background-image: url(./assets/img/alumnos/alumno1.jpeg);
-}
-
-.vicky{
-    background-image: url(./assets/img/alumnos/vicky.jpeg);
-}
-
-.tomi{
-    background-image: url(./assets/img/alumnos/alumno2.jpeg);
-    
-}
-
-.lauti{
-    background-image: url(./assets/img/alumnos/alumno4.jpeg);
-    
-}
-
-    /* fin ALUMNOS */
-
-    /* inicio FOOTER */
-
-footer{
-    padding: 20px;
-    color: #f3f3f3;
-}
-
-.copyright{
-    text-align: center;
-}
-
-.redes{
-    text-align: center;
-    font-size: 40px;
-    gap: 40px;
-}
-
-.redes a{
-    transition: 0.5s;
-    list-style: none;
-    text-decoration: none;
-    color: #141414;
-}
-
-.redes a:hover{
-    color: #077288;
-    font-size: 45px ;
-    transition: all 0.5s;
-}
-
-    /* fin FOOTER */
-
-/* FIN HOME */
-
-/* inicio GALERIA */
-
-    /* inicio Header */
-.headerGal{
-    background-color: #f5f5f5;
-    width: 100%;
-    box-shadow: #141414 1px 1px 3px;
-    z-index: 9999;
-    position: sticky;
-    top: 0;    
-    
-}
-    /* fin Header */
-
-    /* inicio Jumbotron */
-
-.jumbotronGaleria{
-    background-image: linear-gradient(#b8b50009, #07728848), url(./assets/img/galeriapic2.jpg);
-    height: calc(100vh - 78.5px);
-    background-position: center;
-    background-size: cover;
-    color: white;
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    margin-bottom: 0;
-}
-
-.callGaleria{
-    height: auto;
-    grid-column: 6/10;
-    background-color: #14141491;
-
-}
-
-.callGaleria h1{
+  }
+  .headAlumnos h2 {
     font-size: 60px;
+  }
+  /* fin ALUMNOS */
+  /* inicio GALERIA */
+  .callGaleria {
+    background-color: rgba(20, 20, 20, 0.7411764706);
+  }
+  /* fin GALERIA */
 }
-
-.callGaleria p{
-    font-size: 25px;
-    text-shadow: #141414 2px 2px;
-}
-
-    /* fin Jumbotron */
-
-    /* inicio Contenedor Galeria */
-
-.contenedorGaleria{
-    width: 100%;
-    height: 1400px;
-    display: grid;
+@media only screen and (min-width: 580px) and (max-width: 912px) {
+  /* inicio GALERIA */
+  .contenedorGaleria {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-areas: 
-    "img1 img1 img3 img7"
-    "img5 img10 img10 img7"
-    "img9 img10 img10 img12"
-    "img4 img8 img2 img2"
-    "img6 img11 img2 img2";
-    gap: 20px;
-    background-color: #DEDEDE;
-    padding: 80px;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "img1 img1 img7 img7" "img6 img6 img7 img7" "img11 img10 img10 img12" "img3 img3 img9 img9" "img4 img4 img8 img8" "img2 img2 img5 img5";
+  }
+  /* fin GALERIA */
+}
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .alumnos {
+    height: 400px;
+  }
+  .cardsAlumnos .descripcion {
+    font-size: 13px;
+  }
+  .cardsAlumnos .img-fluid {
+    height: 200px;
+  }
 }
 
-.imgGal{
-    background-position: center;
-    background-size: cover;
-    transform: scale(1);
-    border-radius: 10px;
-}
-
-.imgGal:hover{
-    transform: scale(1.10);
-    transition: all 0.7s;
-}
-
-.imgGal1{
-    grid-area: img1;
-    background-image: url(./assets/img/galeria/bajo_ensamble.jpg);
-}
-
-.imgGal2{
-    grid-area: img2;
-    background-image: url(./assets/img/galeria/cantante2.jpg);
-}
-
-.imgGal3{
-    grid-area: img3;
-    background-image: url(./assets/img/galeria/guitarrista.jpg);
-}
-
-.imgGal4{
-    grid-area: img4;
-    background-image: url(./assets/img/galeria/cantante.jpg);
-}
-
-.imgGal5{
-    grid-area: img5;
-    background-image: url(./assets/img/galeria/bajista.jpg);
-}
-
-.imgGal6{
-    grid-area: img6;
-    background-image: url(./assets/img/galeria/bajista2.jpg);
-}
-
-.imgGal7{
-    grid-area: img7;
-    background-image: url(./assets/img/galeria/cantante_3.jpg);
-}
-
-.imgGal8{
-    grid-area: img8;
-    background-image: url(./assets/img/galeria/musicos.jpg);
-}
-
-.imgGal9{
-    grid-area: img9;
-    background-image: url(./assets/img/galeria/tres.jpg);
-}
-
-.imgGal10{
-    grid-area: img10;
-    background-image: url(./assets/img/galeria/publico.jpg);
-}
-
-.imgGal11{
-    grid-area: img11;
-    background-image: url(./assets/img/galeria/publico2.jpg);
-}
-
-.imgGal12{
-    grid-area: img12;
-    background-image: url(./assets/img/galeria/tecladista.jpg);
-}
-
-    /* inicio Contenedor Galeria */
-/* fin GALERIA */
-
-
-
-
-
-/* MEDIA QUERIES */
-
-@media only screen and (min-width:360px) and (max-width:560px){
-
-    /* inicio GALERIA */
-    .imgGal:hover{
-        transform: scale(1.20);
-        transition: all 0.7s;
-    }
-
-    /* fin GALERIA */
-}
-
-@media only screen and (max-width:579px){
-    /* inicio GALERIA */
-    .contenedorGaleria{
-        height: auto;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(12, 250px);
-        grid-template-areas: 
-        "img1 img1"
-        "img7 img7"
-        "img6 img6"
-        "img4 img4"
-        "img11 img11" 
-        "img10 img10"
-        "img3 img3"
-        "img9 img9"
-        "img2 img2" 
-        "img5 img5"
-        "img8 img8" 
-        "img12 img12";
-        padding: 20px;
-    }
-    /* fin GALERIA */
-}   
-
-@media only screen and (min-width: 360px) and (max-width:912px){  
-    /* inicio HOME */
-        /* inicio MAIN */
-    .call{
-        grid-column: 2/10;
-        grid-row: 3/4;
-        border: solid 1px #141414;
-        padding: 20px;
-    }
-
-    .callHome{
-        background-color: #1414143a;
-    }
-    
-    .call h1{
-        font-size: 40px;
-    }
-        /* fin MAIN */
-
-        /* inicio NOSOTROS */
-
-    .nosotros{
-        height: min-content;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-    
-    .nright{
-        height: 250px;
-    }
-    
-    .nleft h2{
-        font-size: 45px;  
-    }
-    
-    .nleft p{
-        font-size: 20px;
-        padding: 10px;
-    }
-
-    .separadorAlumnos{
-        margin-top: 20px;
-    }
-
-        /* fin NOSOTROS */
-
-        /* inicio ALUMNOS */
-
-    .alumnos{
-        height: auto;
-        margin-bottom: 10px;
-    }
-
-    .headAlumnos h2{
-        font-size: 60px; 
-    }
-
-        /* fin ALUMNOS */
-  
-
-    /* inicio GALERIA */
-
-    .callGaleria{
-        background-color: #141414bd;
-    }
-
-    /* fin GALERIA */
-}
-
-
-@media only screen and (min-width:580px) and (max-width:912px){
-
-    /* inicio GALERIA */
-
-    .contenedorGaleria{
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(6, 1fr);
-        grid-template-areas: 
-        "img1 img1 img7 img7"
-        "img6 img6 img7 img7"
-        "img11 img10 img10 img12"
-        "img3 img3 img9 img9"
-        "img4 img4 img8 img8"
-        "img2 img2 img5 img5";
-    }
-    /* fin GALERIA */
-}   
-
+/*# sourceMappingURL=styles.css.map */

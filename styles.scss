@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Lato:ital,wght@0,100;0,300;1,100;1,900&family=Montserrat:ital,wght@0,200;0,300;1,300&family=Oswald:wght@200;300;700&family=Quicksand:wght@300;400&family=Roboto+Condensed:ital,wght@1,300&display=swap');
+
+/* font-family: 'Climate Crisis', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@import "./modulos/home.scss";
+
+@import "./modulos/galeria.scss";
+
+
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width:360px) and (max-width:560px){
+
+    /* inicio GALERIA */
+    .imgGal:hover{
+        transform: scale(1.20);
+        transition: all 0.7s;
+    }
+
+    /* fin GALERIA */
+}
+
+@media only screen and (max-width:579px){
+    /* inicio GALERIA */
+    .contenedorGaleria{
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(12, 250px);
+        grid-template-areas: 
+        "img1 img1"
+        "img7 img7"
+        "img6 img6"
+        "img4 img4"
+        "img11 img11" 
+        "img10 img10"
+        "img3 img3"
+        "img9 img9"
+        "img2 img2" 
+        "img5 img5"
+        "img8 img8" 
+        "img12 img12";
+        padding: 20px;
+    }
+    /* fin GALERIA */
+}   
+
+@media only screen and (min-width: 360px) and (max-width:912px){  
+    /* inicio HOME */
+        /* inicio MAIN */
+    .call{
+        grid-column: 2/10;
+        grid-row: 3/4;
+        border: solid 1px #141414;
+        padding: 20px;
+    }
+
+    .callHome{
+        background-color: #1414143a;
+    }
+    
+    .call h1{
+        font-size: 40px;
+    }
+        /* fin MAIN */
+
+        /* inicio NOSOTROS */
+
+    .nosotros{
+        height: min-content;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    .nright{
+        height: 250px;
+    }
+    
+    .nleft h2{
+        font-size: 45px;  
+    }
+    
+    .nleft p{
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .separadorAlumnos{
+        margin-top: 20px;
+    }
+
+        /* fin NOSOTROS */
+
+        /* inicio ALUMNOS */
+
+    .alumnos{
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .headAlumnos h2{
+        font-size: 60px; 
+    }
+
+        /* fin ALUMNOS */
+  
+
+    /* inicio GALERIA */
+
+    .callGaleria{
+        background-color: #141414bd;
+    }
+
+    /* fin GALERIA */
+}
+
+
+@media only screen and (min-width:580px) and (max-width:912px){
+
+    /* inicio GALERIA */
+
+    .contenedorGaleria{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+        "img1 img1 img7 img7"
+        "img6 img6 img7 img7"
+        "img11 img10 img10 img12"
+        "img3 img3 img9 img9"
+        "img4 img4 img8 img8"
+        "img2 img2 img5 img5";
+    }
+    /* fin GALERIA */
+}
+
+@media only screen and (min-width:1200px) and (max-width:1400px){
+     
+    .alumnos{
+        height: 400px;
+    }
+
+    .cardsAlumnos .descripcion{
+        font-size: 13px;
+    }
+
+    .cardsAlumnos .img-fluid{
+        height: 200px;
+    }
+
+} 
