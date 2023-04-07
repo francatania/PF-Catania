@@ -66,13 +66,13 @@
 .imgGal{
     background-position: center;
     background-size: cover;
-    transform: scale(1);
     border-radius: 10px;
+    transition: transform 0.7s;
 }
 
 .imgGal:hover{
     transform: scale(1.10);
-    transition: all 0.7s;
+    transition: 0.7s;
 }
 
 .imgGal1{

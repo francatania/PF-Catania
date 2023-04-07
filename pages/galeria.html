@@ -22,6 +22,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css" />
     <title>Galeria</title>
   </head>
@@ -59,9 +60,9 @@
 
     <!-- jumbotron -->
     <section class="jumbotron jumbotronGaleria">
-      <div class="call callGaleria">
+      <div data-aos="fade-up" class="call callGaleria">
         <h1>Galería</h1>
-        <p>Te mostramos un poco de nosotros y nuestros conciertos!</p>
+        <p>¡Te mostramos un poco de nosotros y nuestros conciertos!</p>
       </div>
     </section>
     <!-- fin JUMBOTRON -->
@@ -69,18 +70,18 @@
     <!-- inicio GALERIA -->
 
     <section class="contenedorGaleria">
-        <div class="imgGal imgGal1"></div>
-        <div class="imgGal imgGal2"></div>
-        <div class="imgGal imgGal3"></div>
-        <div class="imgGal imgGal4"></div>
-        <div class="imgGal imgGal5"></div>
-        <div class="imgGal imgGal6"></div>
-        <div class="imgGal imgGal7"></div>
-        <div class="imgGal imgGal8"></div>
-        <div class="imgGal imgGal9"></div>
-        <div class="imgGal imgGal10"></div>
-        <div class="imgGal imgGal11"></div>
-        <div class="imgGal imgGal12"></div>
+        <div data-aos="fade-down" class="imgGal imgGal1"></div>
+        <div data-aos="fade-left" class="imgGal imgGal2"></div>
+        <div data-aos="fade-down" class="imgGal imgGal3"></div>
+        <div data-aos="fade-right" class="imgGal imgGal4"></div>
+        <div data-aos="fade-right" class="imgGal imgGal5"></div>
+        <div data-aos="fade-right" class="imgGal imgGal6"></div>
+        <div data-aos="fade-left" class="imgGal imgGal7"></div>
+        <div data-aos="fade-up" class="imgGal imgGal8"></div>
+        <div data-aos="fade-right" class="imgGal imgGal9"></div>
+        <div data-aos="fade-up" class="imgGal imgGal10"></div>
+        <div data-aos="fade-up" class="imgGal imgGal11"></div>
+        <div data-aos="fade-left" class="imgGal imgGal12"></div>
     </section>
     
 
@@ -121,5 +122,9 @@
       integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
