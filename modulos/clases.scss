@@ -1,0 +1,83 @@
+/* inicio CLASES */
+
+    /* inicio TIPO DE CLASES */
+
+$imagen1: url(../assets/img/clases/instrumentos.jpg);
+$imagen2: url(../assets/img/clases/produccion.jpg);
+$imagen3: url(../assets/img/clases/teoria.jpg);
+
+.jumbotronClases{
+    background-image: linear-gradient(rgba(184, 181, 0, 0.0352941176), rgba(7, 114, 136, 0.2823529412)), url(../assets/img/clase_guitBYN.jpg);
+}
+
+.tipoClases{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+@for $i from 1 through 3 {
+    .tipo#{$i} {
+        @if $i == 1{
+            background-image: linear-gradient(#b8b50009, #07728831), $imagen1;
+        }
+
+        @else if $i == 2{
+            background-image: linear-gradient(#b8b50009, #07728831), $imagen2;
+        }
+
+        @else if $i == 3{
+            background-image: linear-gradient(#b8b50009, #07728831), $imagen3;
+        }
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        width: 1100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top:30px;
+    } 
+}
+
+.tipo3{
+    margin-bottom:30px;
+}
+
+@for $i from 1 through 3 {
+    .info#{$i}{
+        width: 500px;
+        height: 300px;
+        background-color: #14141488;
+        border: 2px solid #141414;
+    }
+}
+
+.h2Clases{
+    text-align: center;
+    color: #b8b500;
+    text-shadow: #141414 2px 2px;
+    font-size: 50px;
+}
+
+.listClases{
+    text-align: center;
+    list-style: none;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    text-shadow: #141414 1px 1px;
+}
+
+.pClases{
+    font-size: 20px;
+    color: white;
+    text-shadow: #141414 1px 1px;
+    text-align: center;
+}
+
+.pProdu{
+    margin-top: 30px;
+}
+

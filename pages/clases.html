@@ -22,6 +22,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css" />
     <title>Clases</title>
   </head>
@@ -68,7 +69,7 @@
 
     <!-- jumbotron -->
     <section class="jumbotron jumbotronClases">
-      <div class="call callClases">
+      <div data-aos="fade-up" class="call callClases">
         <h1>Clases</h1>
         <p>
           En STUDIO MAJ7 ofrecemos gran variedad de clases para
@@ -83,40 +84,42 @@
 
     <!-- inicio TIPO DE CLASES -->
     <section class="tipoClases">
-      <div class="instrumentoLeft">
-        <h2 class="headClases">Instrumentos</h2>
-        <ul class="listInst">
-          <li class="item">Guitarra</li>
-          <li class="item">Bajo</li>
-          <li class="item">Piano</li>
-          <li class="item">Bateria</li>
-          <li class="item">Canto</li>
-        </ul>
+      <div data-aos="fade-right" class="instrumentos tipo1">
+        <div data-aos="fade-up" class="infoInstrumentos info1">
+          <h2 class="h2Clases">Instrumentos</h2>
+          <ul class="listClases">
+            <li class="item">Guitarra</li>
+            <li class="item">Bajo</li>
+            <li class="item">Piano</li>
+            <li class="item">Bateria</li>
+            <li class="item">Canto</li>
+          </ul>
+        </div>
       </div>
-      <div class="produccionLeft">
-        <h2 class="headClases">Produccion Musical</h2>
-        <p class="pClases">
-          Pre producción, producción y mastering. Aprendé todo con Ableton Live
-          en nuestro estudio con las mejores tecnologías.
-        </p>
+      
+      <div data-aos="fade-left" class="produccion tipo2">
+        <div data-aos="fade-up" class="infoProduccion info2">
+          <h2 class="h2Clases">Produccion Musical</h2>
+          <p class="pClases pProdu">
+            Pre producción, producción y mastering. Aprendé todo con Ableton Live
+            en nuestro estudio con las mejores tecnologías.
+          </p>
+        </div>
       </div>
-      <div class="teoriaLeft">
-        <h2 class="headClases">Teoría Musical</h2>
-        <p class="pClases">
-          Aprendé la teoría de la musica, fundamental para tus composiciones
-        </p>
-        <ul class="listTeo">
-          <li>Audioperceptiva</li>
-          <li>Armonía</li>
-          <li>Taller de Composición</li>
-        </ul>
+
+      <div data-aos="fade-right" class="teoria tipo3">
+        <div data-aos="fade-up" class="infoTeoria info3">
+          <h2 class="h2Clases">Teoría Musical</h2>
+          <p class="pClases">
+            Aprendé la teoría de la musica, fundamental para tus composiciones
+          </p>
+          <ul class="listClases">
+            <li>Audioperceptiva</li>
+            <li>Armonía</li>
+            <li>Taller de Composición</li>
+          </ul>
+        </div>
       </div>
-      <div class="imgClases img1"></div>
-      <div class="imgClases img2"></div>
-      <div class="imgClases img3"></div>
-      <div class="imgClases img4"></div>
-      <div class="imgClases img5"></div>
-      <div class="imgClases img6"></div>
     </section>
     <!-- fin TIPO DE CLASES -->
 
@@ -155,5 +158,9 @@
       integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
