@@ -17,6 +17,10 @@ html {
 }
 
 /* INICIO HOME */
+body {
+  overflow-x: hidden;
+}
+
 /* inicio NAVBAR */
 header {
   background-color: #f5f5f5;
