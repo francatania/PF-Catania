@@ -376,7 +376,7 @@ footer {
 /* inicio CLASES */
 /* inicio TIPO DE CLASES */
 .jumbotronClases {
-  background-image: linear-gradient(rgba(184, 181, 0, 0.0352941176), rgba(7, 114, 136, 0.2823529412)), url(../assets/img/clase_guitBYN.jpg);
+  background-image: linear-gradient(rgba(184, 181, 0, 0.0352941176), rgba(7, 114, 136, 0.2823529412)), url(./assets/img/clase_guitBYN.jpg);
 }
 
 .callClases {
@@ -391,7 +391,7 @@ footer {
 }
 
 .tipo1 {
-  background-image: linear-gradient(rgba(184, 181, 0, 0.0352941176), rgba(7, 114, 136, 0.1921568627)), url(../assets/img/clases/instrumentos.jpg);
+  background-image: linear-gradient(rgba(184, 181, 0, 0.0352941176), rgba(7, 114, 136, 0.1921568627)), url(./assets/img/clases/instrumentos.jpg);
   background-size: cover;
   background-position: center;
   height: 500px;
@@ -403,7 +403,7 @@ footer {
 }
 
 .tipo2 {
-  background-image: linear-gradient(rgba(184, 181, 0, 0.0352941176), rgba(7, 114, 136, 0.1921568627)), url(../assets/img/clases/produccion.jpg);
+  background-image: linear-gradient(rgba(184, 181, 0, 0.0352941176), rgba(7, 114, 136, 0.1921568627)), url(./assets/img/clases/produccion.jpg);
   background-size: cover;
   background-position: center;
   height: 500px;
@@ -415,7 +415,7 @@ footer {
 }
 
 .tipo3 {
-  background-image: linear-gradient(rgba(184, 181, 0, 0.0352941176), rgba(7, 114, 136, 0.1921568627)), url(../assets/img/clases/teoria.jpg);
+  background-image: linear-gradient(rgba(184, 181, 0, 0.0352941176), rgba(7, 114, 136, 0.1921568627)), url(./assets/img/clases/teoria.jpg);
   background-size: cover;
   background-position: center;
   height: 500px;
