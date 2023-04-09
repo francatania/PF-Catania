@@ -69,7 +69,7 @@ header {
   grid-column: 5/10;
   grid-row: 3/4;
   border: solid 1px #141414;
-  background-color: rgba(20, 20, 20, 0.2274509804);
+  background-color: rgba(20, 20, 20, 0.5215686275);
   padding: 30px;
 }
 
@@ -379,6 +379,10 @@ footer {
   background-image: linear-gradient(rgba(184, 181, 0, 0.0352941176), rgba(7, 114, 136, 0.2823529412)), url(../assets/img/clase_guitBYN.jpg);
 }
 
+.callClases {
+  background-color: rgba(20, 20, 20, 0.6784313725);
+}
+
 .tipoClases {
   display: flex;
   flex-direction: column;
@@ -475,13 +479,63 @@ footer {
 }
 
 /* MEDIA QUERIES */
-@media only screen and (min-width: 360px) and (max-width: 560px) {
+@media only screen and (min-width: 360px) and (max-width: 580px) {
   /* inicio GALERIA */
   .imgGal:hover {
     transform: scale(1.2);
     transition: all 0.7s;
   }
   /* fin GALERIA */
+  .tipo1 {
+    height: 400px;
+    width: 350px;
+  }
+  .tipo2 {
+    height: 400px;
+    width: 350px;
+  }
+  .tipo3 {
+    height: 400px;
+    width: 350px;
+  }
+  .info1 {
+    width: 300px;
+    height: 300px;
+    background-color: rgba(20, 20, 20, 0.5333333333);
+    border: 2px solid #141414;
+  }
+  .info2 {
+    width: 300px;
+    height: 300px;
+    background-color: rgba(20, 20, 20, 0.5333333333);
+    border: 2px solid #141414;
+  }
+  .info3 {
+    width: 300px;
+    height: 300px;
+    background-color: rgba(20, 20, 20, 0.5333333333);
+    border: 2px solid #141414;
+  }
+  .h2Clases {
+    font-size: 35px;
+  }
+  .listClases {
+    font-size: 20px;
+  }
+  .listInst {
+    margin-top: 25px;
+  }
+  .listTeo {
+    font-size: 15px;
+    margin-top: 30px;
+  }
+  .pClases {
+    font-size: 15px;
+  }
+  .pTeo {
+    margin-top: 20px;
+    font-size: 20px;
+  }
 }
 @media only screen and (max-width: 579px) {
   /* inicio GALERIA */
@@ -553,6 +607,32 @@ footer {
     grid-template-areas: "img1 img1 img7 img7" "img6 img6 img7 img7" "img11 img10 img10 img12" "img3 img3 img9 img9" "img4 img4 img8 img8" "img2 img2 img5 img5";
   }
   /* fin GALERIA */
+  .tipo1 {
+    height: 350px;
+    width: 550px;
+  }
+  .tipo2 {
+    height: 350px;
+    width: 550px;
+  }
+  .tipo3 {
+    height: 350px;
+    width: 550px;
+  }
+}
+@media only screen and (min-width: 912px) and (max-width: 1100px) {
+  .tipo1 {
+    height: 500px;
+    width: 800px;
+  }
+  .tipo2 {
+    height: 500px;
+    width: 800px;
+  }
+  .tipo3 {
+    height: 500px;
+    width: 800px;
+  }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
   .alumnos {
