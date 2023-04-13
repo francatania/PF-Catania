@@ -16,7 +16,7 @@
 
 .jumbotronGaleria{
     background-image: linear-gradient(#b8b50009, #07728848), url(./assets/img/galeriapic2.jpg);
-    height: calc(100vh - 78.5px);
+    height: calc(100vh - 60px);
     background-position: center;
     background-size: cover;
     color: white;
@@ -30,7 +30,6 @@
     height: auto;
     grid-column: 6/10;
     background-color: #14141491;
-
 }
 
 .callGaleria h1{

@@ -1,5 +1,9 @@
-/* INICIO HOME */
 
+$amarillo: #b8b500;
+$negro: #141414;
+$sombraTitulo: $negro 1px 1px 1px;
+
+/* INICIO HOME */
 body{
     overflow-x:hidden;
 }
@@ -12,7 +16,12 @@ body{
         box-shadow: #141414 1px 1px 3px;
         z-index: 9999;
         position: sticky;
-        top: 0;    
+        top: 0;
+        height: 60px;    
+    }
+
+    nav.header{
+        height: 60px;
     }
     
     .nameCompany{
@@ -36,7 +45,7 @@ body{
     
     .nav-link{
         color:#141414!important;
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 500;
     }
     
@@ -45,7 +54,7 @@ body{
         /* inicio MAIN */
     .jumbotron{
         background-image: linear-gradient(#b8b50009, #07728848), url(./assets/img/bateria.jpg);
-        height: calc(100vh - 78.5px);
+        height: calc(100vh - 60px);
         background-position: center;
         background-size: cover;
         color: white;
@@ -126,11 +135,12 @@ body{
         margin-bottom: 100px;
     }
     
-    .nright{
+    .nrightNosotros{
         background-image: url(./assets/img/nosotros2.jpg);
         background-position: center;
         background-size: cover;
         height: 400px;
+        border-radius: 30px;
     }
     
     .nleft h2{
@@ -148,23 +158,22 @@ body{
     
     .separadorAlumnos{
         width: 100%;
-        height: 100px;
+        height: 20px;
     }
     
         /* inicio ALUMNOS */
     
     .alumnos{
         height: auto;
-        margin-bottom: 10px;
         background: linear-gradient(45deg, white, #07728891);
         margin-bottom: 50px;
     }
     
     
     .headAlumnos h2{
-        color: #141414;
-        font-weight: 100;
-        font-size: 90px; 
+        color: $amarillo;
+        text-shadow: $sombraTitulo;
+        font-size: 70px;
         text-align: center;
         margin-top: 20px;
         margin-bottom: 40px;

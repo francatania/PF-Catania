@@ -24,6 +24,7 @@ html {
 
 @import "./modulos/clases.scss";
 
+@import "./modulos/eventos.scss";
 
 /* MEDIA QUERIES */
 
@@ -80,6 +81,46 @@ html {
         font-size: 20px;
     }
     // fin CLASES
+
+         // inicio EVENTOS
+    .jumbotronEventos{
+        .callEventos{
+            grid-column: 2/10;
+        }
+    }
+    .ensamble2{
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 20px;
+        display: inline-block;
+        .nleft{
+            width: 100%;
+        }
+        h2{
+            font-size: 50px;
+        }
+        p{
+            font-size: 20px;
+        }
+        .carousel{
+            width: 100%;
+            height: 400px;
+        }
+        img{
+            height: 300px;
+        }
+    }
+    #video{
+        h2{
+            font-size: 30px;
+            text-align: center;
+        }
+        iframe{
+            width: 360px;
+            height: 400px;
+        }
+    }
+    // fin EVENTOS
 }
 
 @media only screen and (max-width:579px){
@@ -175,11 +216,8 @@ html {
     /* fin GALERIA */
 }
 
-
 @media only screen and (min-width:580px) and (max-width:912px){
-
     /* inicio GALERIA */
-
     .contenedorGaleria{
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(6, 1fr);
@@ -192,7 +230,6 @@ html {
         "img2 img2 img5 img5";
     }
     /* fin GALERIA */
-
     // inicio CLASES 
     @for $i from 1 through 3 {
         .tipo#{$i} {
@@ -201,6 +238,38 @@ html {
         } 
     }
     // fin CLASES
+
+         // inicio EVENTOS
+    .jumbotronEventos{
+        .callEventos{
+            grid-column: 3/9;
+        }
+    }
+    .ensamble2{
+        display: inline-block;
+        .nleft{
+            width: 100%;
+        }
+        h2{
+            font-size: 50px;
+        }
+        p{
+            font-size: 20px;
+        }
+        .carousel{
+            width: 100%;
+        }
+    }
+    #video{
+        h2{
+            font-size: 30px;
+        }
+        iframe{
+            width: 500px;
+            height: 400px;
+        }
+    }
+    // fin EVENTOS
 }
 
 @media only screen and (min-width:912px) and (max-width:1100px){
@@ -212,10 +281,35 @@ html {
         } 
     }
     // fin CLASES
+
+     // inicio EVENTOS
+    .jumbotronEventos{
+        .callEventos{
+            grid-column: 3/9;
+        }
+    }
+    .ensamble2{
+        h2{
+            font-size: 50px;
+        }
+        p{
+            font-size: 20px;
+        }
+        .carousel{
+            width: 400px;
+        }
+    }
+    #video{
+        h2{
+            font-size: 50px;
+        }
+    }
+    // fin EVENTOS
 }
 
-@media only screen and (min-width:1200px) and (max-width:1400px){
-     
+@media only screen and (min-width:1100px) and (max-width:1400px){
+
+    // inicio ALUMNOS
     .alumnos{
         height: 400px;
     }
@@ -227,5 +321,31 @@ html {
     .cardsAlumnos .img-fluid{
         height: 200px;
     }
+    // fin ALUMNOS
 
+    // inicio EVENTOS
+    .jumbotronEventos{
+        .callEventos{
+            grid-column: 3/7;
+        }
+    }
+
+    .ensamble2{
+        margin-top: 50px;
+        .carousel{
+            width: 500px;
+        }
+    }
+
+    #video{
+        h2{
+            font-size: 60px;
+            margin-bottom: 40px;
+        }
+        iframe{
+            width: 800px;
+            height: 400px;
+        }
+    }
+    // fin EVENTOS
 } 

@@ -1,0 +1,92 @@
+$amarillo: #b8b500;
+$negro: #141414;
+$sombraTitulo: $negro 1px 1px 1px;
+
+
+.jumbotronEventos{
+
+    background-image: url(../assets/img/jumboEventos.jpg);
+    .callEventos{
+        grid-column: 3/6;
+    }
+}
+
+.ensamble2{
+    display: flex;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 80px;
+    .nleft{
+        width: 900px;
+    }
+    h2{
+        text-align: center;
+        color: $amarillo;
+        text-shadow: $sombraTitulo;
+        font-size: 60px;
+    }
+    p{
+        font-size: 20px;
+        text-align: center;
+    }
+    .carousel{
+        width: 700px;
+        filter: grayscale(100%);
+        transition: 0.5s;
+    }
+    .carousel-inner{
+        border-radius: 50px;
+    }
+    .carousel:hover{
+        transition: 0.5s;
+        filter: grayscale(0%);
+    }
+}
+
+.ensamble{
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 80px;
+    h2{
+        text-align: center;
+        color: $amarillo;
+        text-shadow: $sombraTitulo;
+        font-size: 60px;
+    }
+    p{
+        font-size: 20px;
+        text-align: center;
+    }
+    .carousel{
+        width: 700px;
+        filter: grayscale(100%);
+        transition: 0.5s;
+        
+    }
+    .carousel-inner{
+        border-radius: 50px;
+    }
+    .carousel:hover{
+        transition: 0.5s;
+        filter: grayscale(0%);
+    }
+}
+
+#video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    h2{
+        color: $amarillo;
+        text-shadow: $sombraTitulo;
+        font-size: 60px;
+        margin-bottom: 50px;
+    }
+    iframe{
+        width: 1200px;
+        height: 600px;
+    }
+}
+
