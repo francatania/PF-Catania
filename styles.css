@@ -29,11 +29,6 @@ header {
   z-index: 9999;
   position: sticky;
   top: 0;
-  height: 60px;
-}
-
-nav.header {
-  height: 60px;
 }
 
 .nameCompany {
@@ -43,7 +38,7 @@ nav.header {
 }
 
 .logo {
-  color: #B8B500;
+  color: #b8b500;
   text-shadow: 2px 2px 2px #141414;
   font-style: italic;
   font-size: 35px;
@@ -81,23 +76,19 @@ nav.header {
   background-color: rgba(20, 20, 20, 0.5215686275);
   padding: 30px;
 }
-
 .call h1 {
   font-size: 60px;
   text-shadow: #141414 1px 1px 2px;
 }
-
 .call span {
   font-style: italic;
 }
-
 .call p {
   padding: 20px;
   font-size: 18px;
   color: #dfdbdb;
   text-shadow: #141414 1px 1px;
 }
-
 .call a {
   font-size: 20px;
   color: #DEDEDE;
@@ -108,9 +99,8 @@ nav.header {
   text-decoration: none;
   border-radius: 5%;
 }
-
 .call a:hover {
-  background-color: #B8B500;
+  background-color: #b8b500;
   color: #141414;
   font-size: 22px;
   transition: all 0.5s;
@@ -150,7 +140,7 @@ nav.header {
 }
 
 .nleft h2 {
-  color: #B8B500;
+  color: #b8b500;
   text-shadow: #141414 1px 1px 1px;
   font-size: 70px;
 }
@@ -268,7 +258,7 @@ footer {
 /* fin Header */
 /* inicio Jumbotron */
 .jumbotronGaleria {
-  background-image: linear-gradient(rgba(184, 181, 0, 0.0352941176), rgba(7, 114, 136, 0.2823529412)), url(./assets/img/galeriapic2.jpg);
+  background-image: linear-gradient(rgba(184, 181, 0, 0.0352941176), rgba(7, 114, 136, 0.2823529412)), url(./assets/img/galeriapic3.jpg);
   height: calc(100vh - 60px);
   background-position: center;
   background-size: cover;
@@ -385,7 +375,7 @@ footer {
 /* inicio CLASES */
 /* inicio TIPO DE CLASES */
 .jumbotronClases {
-  background-image: linear-gradient(rgba(184, 181, 0, 0.0352941176), rgba(7, 114, 136, 0.2823529412)), url(./assets/img/clase_guitBYN.jpg);
+  background-image: linear-gradient(rgba(184, 181, 0, 0.0352941176), rgba(7, 114, 136, 0.2823529412)), url(./assets/img/clases2.jpg);
 }
 
 .callClases {
@@ -488,7 +478,7 @@ footer {
 }
 
 .jumbotronEventos {
-  background-image: url(../assets/img/jumboEventos.jpg);
+  background-image: linear-gradient(rgba(184, 181, 0, 0.0352941176), rgba(7, 114, 136, 0.2823529412)), url(./assets/img/jumboEventos.jpg);
 }
 .jumbotronEventos .callEventos {
   grid-column: 3/6;
@@ -570,6 +560,40 @@ footer {
 #video iframe {
   width: 1200px;
   height: 600px;
+}
+
+.jumbotronContacto {
+  background-image: linear-gradient(rgba(184, 181, 0, 0.0352941176), rgba(7, 114, 136, 0.2823529412)), url(../assets/img/contactoJumbo.jpg);
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  margin-top: 75px;
+  margin-bottom: 62.5px;
+}
+.form form {
+  width: 700px;
+  background-color: #b8b500;
+  padding: 20px 50px 10px 50px;
+  color: #141414;
+  font-size: 20px;
+  border-radius: 50px;
+}
+.form button {
+  font-size: 15px;
+  color: #DEDEDE;
+  background-color: #141414;
+  margin-left: 0px;
+  padding: 5px;
+  text-decoration: none;
+  border-radius: 10%;
+  border-color: #141414;
+}
+.form button:hover {
+  background-color: #077288;
+  transition: all 0.5s;
+  border-color: #141414;
 }
 
 /* MEDIA QUERIES */
@@ -684,11 +708,11 @@ footer {
     border: solid 1px #141414;
     padding: 20px;
   }
-  .callHome {
-    background-color: rgba(20, 20, 20, 0.2274509804);
-  }
   .call h1 {
     font-size: 40px;
+  }
+  .callHome {
+    background-color: rgba(20, 20, 20, 0.5333333333);
   }
   /* fin MAIN */
   /* inicio NOSOTROS */

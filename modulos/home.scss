@@ -1,6 +1,7 @@
 
 $amarillo: #b8b500;
 $negro: #141414;
+$blanco: #f5f5f5;
 $sombraTitulo: $negro 1px 1px 1px;
 
 /* INICIO HOME */
@@ -11,28 +12,23 @@ body{
 
     
     header{
-        background-color: #f5f5f5;
+        background-color: $blanco;
         width: 100%;
-        box-shadow: #141414 1px 1px 3px;
+        box-shadow: $negro 1px 1px 3px;
         z-index: 9999;
         position: sticky;
-        top: 0;
-        height: 60px;    
+        top: 0;   
     }
 
-    nav.header{
-        height: 60px;
-    }
-    
     .nameCompany{
         font-size: 30px; 
-        color: #141414!important;
+        color: $negro!important;
         text-transform: uppercase;
     }
     
     .logo{
-        color: #B8B500;
-        text-shadow:  2px 2px 2px #141414;
+        color: $amarillo;
+        text-shadow:  2px 2px 2px $negro;
         font-style: italic;
         font-size: 35px;
     }
@@ -44,7 +40,7 @@ body{
     }
     
     .nav-link{
-        color:#141414!important;
+        color:$negro!important;
         font-size: 20px;
         font-weight: 500;
     }
@@ -67,46 +63,40 @@ body{
     .call{
         grid-column: 5/10;
         grid-row: 3/4;
-        border: solid 1px #141414;
+        border: solid 1px $negro;
         background-color: #14141485;
         padding: 30px;
+        h1{
+            font-size: 60px;
+            text-shadow: $negro 1px 1px 2px;
+        }
+        span{
+            font-style: italic;
+        }
+        p{
+            padding: 20px;
+            font-size: 18px;
+            color: #dfdbdb;
+            text-shadow: $negro 1px 1px;
+        }
+        a{
+            font-size: 20px;
+            color: #DEDEDE;
+            background-color: $negro;
+            margin-left: 0px;
+            padding: 5px;
+            transition: all 0.5s;
+            text-decoration: none;
+            border-radius: 5%;
+        }
+        a:hover{
+            background-color: $amarillo;
+            color: $negro;
+            font-size: 22px;
+            transition: all 0.5s;
+        }
     }
-    
-    .call h1{
-        font-size: 60px;
-        text-shadow: #141414 1px 1px 2px;
-    }
-    
-    .call span{
-        font-style: italic;
-    }
-    
-    .call p{
-        padding: 20px;
-        font-size: 18px;
-        color: #dfdbdb;
-        text-shadow: #141414 1px 1px;
-    }
-    
-    .call a{
-        font-size: 20px;
-        color: #DEDEDE;
-        background-color: #141414;
-        margin-left: 0px;
-        padding: 5px;
-        transition: all 0.5s;
-        text-decoration: none;
-        border-radius: 5%;
-    }
-    
-    .call a:hover{
-        background-color: #B8B500;
-        color: #141414;
-        font-size: 22px;
-        transition: all 0.5s;
-        
-    }
-    
+       
         /* fin MAIN */
     
         /* inicio NOSOTROS */
@@ -144,8 +134,8 @@ body{
     }
     
     .nleft h2{
-        color: #B8B500;
-        text-shadow: #141414 1px 1px 1px;
+        color: $amarillo;
+        text-shadow: $negro 1px 1px 1px;
         font-size: 70px;  
     }
     
@@ -200,7 +190,7 @@ body{
         background-size: cover;
         background-position: center;
         height: 300px;
-        box-shadow: 2px 2px 3px #141414;
+        box-shadow: 2px 2px 3px $negro;
         border-radius: 100%;
     }
     
@@ -245,7 +235,7 @@ body{
         transition: 0.5s;
         list-style: none;
         text-decoration: none;
-        color: #141414;
+        color: $negro;
     }
     
     .redes a:hover{

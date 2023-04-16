@@ -26,6 +26,8 @@ html {
 
 @import "./modulos/eventos.scss";
 
+@import "./modulos/contacto.scss";
+
 /* MEDIA QUERIES */
 
 @media only screen and (min-width:360px) and (max-width:580px){
@@ -45,7 +47,6 @@ html {
             width: 350px;
         } 
     }
-
     @for $i from 1 through 3 {
         .info#{$i}{
             width: 300px;
@@ -54,28 +55,22 @@ html {
             border: 2px solid #141414;
         }
     }
-    
     .h2Clases{
         font-size: 35px;
     }
-    
     .listClases{
         font-size: 20px;
     }
-    
     .listInst{
         margin-top: 25px;
     }
-    
     .listTeo{
         font-size: 15px;
         margin-top: 30px;
     }
-
     .pClases{
         font-size: 15px;
     }
-
     .pTeo{
         margin-top: 20px;
         font-size: 20px;
@@ -155,67 +150,49 @@ html {
         grid-row: 3/4;
         border: solid 1px #141414;
         padding: 20px;
+        h1{
+            font-size: 40px;
+        }
     }
-
     .callHome{
-        background-color: #1414143a;
-    }
-    
-    .call h1{
-        font-size: 40px;
+        background-color: #14141488;
     }
         /* fin MAIN */
-
         /* inicio NOSOTROS */
-
     .nosotros{
         height: min-content;
         padding-left: 30px;
         padding-right: 30px;
     }
-    
     .nright{
         height: 250px;
     }
-    
     .nleft h2{
         font-size: 45px;  
     }
-    
     .nleft p{
         font-size: 20px;
         padding: 10px;
     }
-
     .separadorAlumnos{
         margin-top: 20px;
     }
-
         /* fin NOSOTROS */
-
         /* inicio ALUMNOS */
-
     .alumnos{
         height: auto;
         margin-bottom: 10px;
     }
-
     .headAlumnos h2{
         font-size: 60px; 
     }
-
         /* fin ALUMNOS */
-  
-
     /* inicio GALERIA */
-
     .callGaleria{
         background-color: #141414bd;
     }
-
     /* fin GALERIA */
 }
-
 @media only screen and (min-width:580px) and (max-width:912px){
     /* inicio GALERIA */
     .contenedorGaleria{
@@ -238,7 +215,6 @@ html {
         } 
     }
     // fin CLASES
-
          // inicio EVENTOS
     .jumbotronEventos{
         .callEventos{
@@ -271,7 +247,6 @@ html {
     }
     // fin EVENTOS
 }
-
 @media only screen and (min-width:912px) and (max-width:1100px){
     // inicio CLASES 
     @for $i from 1 through 3 {
@@ -281,7 +256,6 @@ html {
         } 
     }
     // fin CLASES
-
      // inicio EVENTOS
     .jumbotronEventos{
         .callEventos{
@@ -306,37 +280,30 @@ html {
     }
     // fin EVENTOS
 }
-
 @media only screen and (min-width:1100px) and (max-width:1400px){
-
     // inicio ALUMNOS
     .alumnos{
         height: 400px;
     }
-
     .cardsAlumnos .descripcion{
         font-size: 13px;
     }
-
     .cardsAlumnos .img-fluid{
         height: 200px;
     }
     // fin ALUMNOS
-
     // inicio EVENTOS
     .jumbotronEventos{
         .callEventos{
             grid-column: 3/7;
         }
     }
-
     .ensamble2{
         margin-top: 50px;
         .carousel{
             width: 500px;
         }
     }
-
     #video{
         h2{
             font-size: 60px;

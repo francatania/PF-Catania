@@ -1,0 +1,39 @@
+$amarillo: #b8b500;
+$negro: #141414;
+$azul: #077288;
+$sombraTitulo: $negro 1px 1px 1px;
+
+.jumbotronContacto{
+    background-image: linear-gradient(#b8b50009, #07728848), url(../assets/img/contactoJumbo.jpg);
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    form{
+        width: 700px;
+        background-color: $amarillo;
+        padding:20px 50px 10px 50px;
+        color: $negro;
+        font-size: 20px;
+        border-radius: 50px;
+    }
+    margin-top:75px;
+    margin-bottom: 62.5px;
+    button{
+        font-size: 15px;
+        color: #DEDEDE;
+        background-color: $negro;
+        margin-left: 0px;
+        padding: 5px;
+        text-decoration: none;
+        border-radius: 10%;
+        border-color: $negro;
+    }
+    button:hover{
+        background-color: $azul;
+        transition: all 0.5s;
+        border-color: $negro;
+    }
+    
+}

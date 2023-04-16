@@ -5,7 +5,7 @@ $sombraTitulo: $negro 1px 1px 1px;
 
 .jumbotronEventos{
 
-    background-image: url(../assets/img/jumboEventos.jpg);
+    background-image: linear-gradient(#b8b50009, #07728848), url(./assets/img/jumboEventos.jpg);
     .callEventos{
         grid-column: 3/6;
     }
