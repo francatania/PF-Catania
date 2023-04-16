@@ -1,10 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Lato:ital,wght@0,100;0,300;1,100;1,900&family=Montserrat:ital,wght@0,200;0,300;1,300&family=Oswald:wght@200;300;700&family=Quicksand:wght@300;400&family=Roboto+Condensed:ital,wght@1,300&display=swap");
-/* font-family: 'Climate Crisis', cursive;
-font-family: 'Lato', sans-serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Oswald', sans-serif;
-font-family: 'Quicksand', sans-serif;
-font-family: 'Roboto Condensed', sans-serif;*/
 * {
   margin: 0px;
   padding: 0px;
@@ -130,8 +124,7 @@ header {
   padding-right: 100px;
   margin-bottom: 100px;
 }
-
-.nrightNosotros {
+.nosotros .nrightNosotros {
   background-image: url(./assets/img/nosotros2.jpg);
   background-position: center;
   background-size: cover;
@@ -144,7 +137,6 @@ header {
   text-shadow: #141414 1px 1px 1px;
   font-size: 70px;
 }
-
 .nleft p {
   font-size: 20px;
   padding: 30px;
@@ -176,18 +168,15 @@ header {
   margin-top: 20px;
   height: 500px;
 }
-
 .cardsAlumnos .nombre {
   text-align: center;
   font-size: 40px;
 }
-
 .cardsAlumnos .descripcion {
   text-align: center;
   padding: 10px;
   font-size: 15px;
 }
-
 .cardsAlumnos .img-fluid {
   background-size: cover;
   background-position: center;
@@ -228,14 +217,12 @@ footer {
   font-size: 40px;
   gap: 40px;
 }
-
 .redes a {
   transition: 0.5s;
   list-style: none;
   text-decoration: none;
   color: #141414;
 }
-
 .redes a:hover {
   color: #077288;
   font-size: 45px;
@@ -280,7 +267,7 @@ footer {
 }
 
 .callGaleria p {
-  font-size: 25px;
+  font-size: 20px;
   text-shadow: #141414 2px 2px;
 }
 
@@ -477,6 +464,8 @@ footer {
   margin-top: 30px;
 }
 
+/* fin CLASES */
+/* inicio EVENTOS */
 .jumbotronEventos {
   background-image: linear-gradient(rgba(184, 181, 0, 0.0352941176), rgba(7, 114, 136, 0.2823529412)), url(./assets/img/jumboEventos.jpg);
 }
@@ -562,6 +551,8 @@ footer {
   height: 600px;
 }
 
+/* FIN EVENTOS */
+/* inicio CONTACTO */
 .jumbotronContacto {
   background-image: linear-gradient(rgba(184, 181, 0, 0.0352941176), rgba(7, 114, 136, 0.2823529412)), url(../assets/img/contactoJumbo.jpg);
 }
@@ -596,14 +587,12 @@ footer {
   border-color: #141414;
 }
 
-/* MEDIA QUERIES */
+/* fin CONTACTO */
 @media only screen and (min-width: 360px) and (max-width: 580px) {
-  /* inicio GALERIA */
   .imgGal:hover {
     transform: scale(1.2);
     transition: all 0.7s;
   }
-  /* fin GALERIA */
   .tipo1 {
     height: 400px;
     width: 350px;
@@ -689,7 +678,6 @@ footer {
   }
 }
 @media only screen and (max-width: 579px) {
-  /* inicio GALERIA */
   .contenedorGaleria {
     height: auto;
     grid-template-columns: 1fr;
@@ -697,11 +685,8 @@ footer {
     grid-template-areas: "img1 img1" "img7 img7" "img6 img6" "img4 img4" "img11 img11" "img10 img10" "img3 img3" "img9 img9" "img2 img2" "img5 img5" "img8 img8" "img12 img12";
     padding: 20px;
   }
-  /* fin GALERIA */
 }
 @media only screen and (min-width: 360px) and (max-width: 912px) {
-  /* inicio HOME */
-  /* inicio MAIN */
   .call {
     grid-column: 2/10;
     grid-row: 3/4;
@@ -714,8 +699,6 @@ footer {
   .callHome {
     background-color: rgba(20, 20, 20, 0.5333333333);
   }
-  /* fin MAIN */
-  /* inicio NOSOTROS */
   .nosotros {
     height: min-content;
     padding-left: 30px;
@@ -734,8 +717,6 @@ footer {
   .separadorAlumnos {
     margin-top: 20px;
   }
-  /* fin NOSOTROS */
-  /* inicio ALUMNOS */
   .alumnos {
     height: auto;
     margin-bottom: 10px;
@@ -743,21 +724,16 @@ footer {
   .headAlumnos h2 {
     font-size: 60px;
   }
-  /* fin ALUMNOS */
-  /* inicio GALERIA */
   .callGaleria {
     background-color: rgba(20, 20, 20, 0.7411764706);
   }
-  /* fin GALERIA */
 }
 @media only screen and (min-width: 580px) and (max-width: 912px) {
-  /* inicio GALERIA */
   .contenedorGaleria {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr);
     grid-template-areas: "img1 img1 img7 img7" "img6 img6 img7 img7" "img11 img10 img10 img12" "img3 img3 img9 img9" "img4 img4 img8 img8" "img2 img2 img5 img5";
   }
-  /* fin GALERIA */
   .tipo1 {
     height: 350px;
     width: 550px;
