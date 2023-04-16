@@ -554,7 +554,7 @@ footer {
 /* FIN EVENTOS */
 /* inicio CONTACTO */
 .jumbotronContacto {
-  background-image: linear-gradient(rgba(184, 181, 0, 0.0352941176), rgba(7, 114, 136, 0.2823529412)), url(../assets/img/contactoJumbo.jpg);
+  background-image: linear-gradient(rgba(184, 181, 0, 0.0352941176), rgba(7, 114, 136, 0.2823529412)), url(./assets/img/contactoJumbo.jpg);
 }
 
 .form {
