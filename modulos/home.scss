@@ -9,8 +9,6 @@ body{
     overflow-x:hidden;
 }
     /* inicio NAVBAR */
-
-    
     header{
         background-color: $blanco;
         width: 100%;
@@ -19,32 +17,53 @@ body{
         position: sticky;
         top: 0;   
     }
-
     .nameCompany{
         font-size: 30px; 
         color: $negro!important;
         text-transform: uppercase;
     }
-    
     .logo{
         color: $amarillo;
         text-shadow:  2px 2px 2px $negro;
         font-style: italic;
         font-size: 35px;
     }
-    
-    
     .lista{
         display: flex;
         justify-content: flex-end;
     }
-    
+    .underline{
+        display: inline-block;
+        position: relative;
+        transition: all 0.5s;
+    }
+    .underline:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: $amarillo;
+        transform-origin: bottom right;
+        transition: transform 0.2s ease-out;
+    }
+    .underline:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+    .underline:hover{
+        color: #b8b500!important;
+        font-size: 22px;
+        font-weight: bold;
+        transition: all 0.5s;
+    }
     .nav-link{
         color:$negro!important;
         font-size: 20px;
         font-weight: 500;
     }
-    
         /* fin NAVBAR */
     
         /* inicio MAIN */

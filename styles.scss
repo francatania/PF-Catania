@@ -116,6 +116,41 @@ html {
         }
     }
     // fin EVENTOS
+        // inicio CONTACTO
+        .form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 20px;
+            form{
+                width: 360px;
+                height: 750px;
+            }
+            .form-control{
+                height: 40px;
+            }
+            .enviar{
+                height: 40px;
+            }
+            .conteinerDatos{
+                margin-top: 50px;
+                .contenedorMapa{
+                    height: 350px;
+                    width: 300px;
+                    margin-left: 0px;
+                    iframe{
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+                .datos{
+                    margin-top: 20px;
+                    margin-left: 0px;
+            }
+            }
+        }
+        // fin CONTACTO
+    
 }
 
 @media only screen and (max-width:579px){
@@ -245,6 +280,38 @@ html {
         }
     }
     // fin EVENTOS
+    // inicio CONTACTO
+    .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 20px;
+        form{
+            width: 580px;
+            height: 750px;
+        }
+        .form-control{
+            height: 40px;
+        }
+        .enviar{
+            height: 40px;
+        }
+        .conteinerDatos{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 50px;
+            .contenedorMapa{
+                margin-left: 0px;
+                width: 300px;
+                height: 250px;
+            }
+            .datos{
+                margin-top: 20px;
+        }
+        }
+    }
+    // fin CONTACTO
 }
 @media only screen and (min-width:912px) and (max-width:1100px){
     // inicio CLASES 
@@ -314,4 +381,14 @@ html {
         }
     }
     // fin EVENTOS
-} 
+}
+
+@media only screen and (min-width:1400px){
+    .form{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 100px;
+        margin-left: 20px;
+    }
+}
