@@ -45,8 +45,10 @@ $imagen3: url(./assets/img/clases/teoria.jpg);
     } 
 }
 
-.tipo3{
-    margin-bottom:30px;
+@for $i from 1 through 3{
+    .tipo#{$i}{
+        margin-bottom: 30px;
+    }
 }
 
 @for $i from 1 through 3 {

@@ -228,6 +228,16 @@ html {
     // fin GALERIA 
 }
 @media only screen and (min-width:580px) and (max-width:912px){
+    // inicio Alumnos
+    .alumnos{
+        margin-bottom: 180px;
+    }
+    .descripcion{
+        font-size: 13px;
+        height: 100px;
+    }
+    // fin ALUMNOS
+
     // inicio GALERIA 
     .contenedorGaleria{
         grid-template-columns: repeat(4, 1fr);
@@ -346,13 +356,13 @@ html {
     }
     // fin EVENTOS
 }
-@media only screen and (min-width:1100px) and (max-width:1400px){
+@media only screen and (min-width:1200px) and (max-width:1400px){
     // inicio ALUMNOS
     .alumnos{
         height: 400px;
     }
     .cardsAlumnos .descripcion{
-        font-size: 13px;
+        font-size: 16px;
     }
     .cardsAlumnos .img-fluid{
         height: 200px;

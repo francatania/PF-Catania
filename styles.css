@@ -179,11 +179,25 @@ header {
   height: 20px;
 }
 
+.separador {
+  width: 100%;
+  height: 100px;
+  background-color: #343a40;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.separador .logoSep {
+  background-image: url(../assets/img/logos/logo.png);
+  background-size: cover;
+  width: 80px;
+  height: 80px;
+}
+
 /* inicio ALUMNOS */
 .alumnos {
   height: auto;
-  background: linear-gradient(45deg, white, rgba(7, 114, 136, 0.568627451));
-  margin-bottom: 50px;
+  margin-bottom: 150px;
 }
 
 .headAlumnos h2 {
@@ -192,7 +206,7 @@ header {
   font-size: 70px;
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .cardsAlumnos {
@@ -201,12 +215,13 @@ header {
 }
 .cardsAlumnos .nombre {
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
 }
 .cardsAlumnos .descripcion {
   text-align: center;
   padding: 10px;
-  font-size: 15px;
+  font-size: 16px;
+  font-style: italic;
 }
 .cardsAlumnos .img-fluid {
   background-size: cover;
@@ -230,6 +245,18 @@ header {
 
 .lauti {
   background-image: url(./assets/img/alumnos/alumno4.jpeg);
+}
+
+.grow {
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
+}
+
+.grow:hover {
+  transform: scale3d(1.1, 1.1, 0.3);
+  -webkit-transform: scale3d(1.1, 1.1, 0.3);
+  -moz-transform: scale3d(1.1, 1.1, 0.3);
 }
 
 /* fin ALUMNOS */
@@ -261,6 +288,29 @@ footer {
 }
 
 /* fin FOOTER */
+.btn-up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b8b500;
+}
+.btn-up .upa {
+  color: #141414;
+  font-size: 30px;
+  transition: 0.5s;
+}
+
+.btn-up:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
 /* FIN HOME */
 /* inicio GALERIA */
 /* inicio Header */
@@ -443,6 +493,14 @@ footer {
   margin-top: 30px;
 }
 
+.tipo1 {
+  margin-bottom: 30px;
+}
+
+.tipo2 {
+  margin-bottom: 30px;
+}
+
 .tipo3 {
   margin-bottom: 30px;
 }
@@ -564,11 +622,15 @@ footer {
   filter: grayscale(0%);
 }
 
+.separadorEventos {
+  margin-top: 50px;
+}
+
 #video {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 100px;
 }
 #video h2 {
@@ -825,6 +887,13 @@ footer {
   }
 }
 @media only screen and (min-width: 580px) and (max-width: 912px) {
+  .alumnos {
+    margin-bottom: 180px;
+  }
+  .descripcion {
+    font-size: 13px;
+    height: 100px;
+  }
   .contenedorGaleria {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr);
@@ -927,12 +996,12 @@ footer {
     font-size: 50px;
   }
 }
-@media only screen and (min-width: 1100px) and (max-width: 1400px) {
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
   .alumnos {
     height: 400px;
   }
   .cardsAlumnos .descripcion {
-    font-size: 13px;
+    font-size: 16px;
   }
   .cardsAlumnos .img-fluid {
     height: 200px;
