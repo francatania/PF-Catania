@@ -2,15 +2,13 @@ $amarillo: #b8b500;
 $negro: #141414;
 $sombraTitulo: $negro 1px 1px 1px;
 
-/* inicio EVENTOS */
+// inicio EVENTOS 
 .jumbotronEventos{
-
     background-image: linear-gradient(#b8b50009, #07728848), url(./assets/img/jumboEventos.jpg);
     .callEventos{
         grid-column: 3/6;
     }
 }
-
 .ensamble2{
     display: flex;
     margin-left: 80px;
@@ -42,7 +40,6 @@ $sombraTitulo: $negro 1px 1px 1px;
         filter: grayscale(0%);
     }
 }
-
 .ensamble{
     margin-left: 80px;
     margin-right: 80px;
@@ -71,11 +68,9 @@ $sombraTitulo: $negro 1px 1px 1px;
         filter: grayscale(0%);
     }
 }
-
 .separadorEventos{
     margin-top: 50px;
 }
-
 #video{
     display: flex;
     flex-direction: column;
@@ -93,6 +88,5 @@ $sombraTitulo: $negro 1px 1px 1px;
         height: 600px;
     }
 }
-
-/* FIN EVENTOS */
+// FIN EVENTOS 
 

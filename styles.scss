@@ -6,40 +6,28 @@
 //font-family: 'Oswald', sans-serif;
 //font-family: 'Quicksand', sans-serif;
 //font-family: 'Roboto Condensed', sans-serif;
-
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-
 html {
     scroll-behavior: smooth;
 }
-
 @import "./modulos/home.scss";
-
 @import "./modulos/galeria.scss";
-
 @import "./modulos/clases.scss";
-
 @import "./modulos/eventos.scss";
-
 @import "./modulos/contacto.scss";
-
 // MEDIA QUERIES 
-
 @media only screen and (min-width:360px) and (max-width:580px){
-
     // inicio GALERIA 
     .imgGal:hover{
         transform: scale(1.20);
         transition: all 0.7s;
     }
-
     // fin GALERIA 
-
     // inicio CLASES 
     @for $i from 1 through 3 {
         .tipo#{$i} {
@@ -76,7 +64,6 @@ html {
         font-size: 20px;
     }
     // fin CLASES
-
          // inicio EVENTOS
     .jumbotronEventos{
         .callEventos{
@@ -152,7 +139,6 @@ html {
         // fin CONTACTO
     
 }
-
 @media only screen and (max-width:579px){
     // inicio GALERIA 
     .contenedorGaleria{
@@ -237,7 +223,6 @@ html {
         height: 100px;
     }
     // fin ALUMNOS
-
     // inicio GALERIA 
     .contenedorGaleria{
         grid-template-columns: repeat(4, 1fr);
@@ -332,7 +317,7 @@ html {
         } 
     }
     // fin CLASES
-     // inicio EVENTOS
+    // inicio EVENTOS
     .jumbotronEventos{
         .callEventos{
             grid-column: 3/9;
@@ -352,6 +337,31 @@ html {
     #video{
         h2{
             font-size: 50px;
+        }
+    }
+    // fin EVENTOS
+}
+@media only screen and (min-width:912px) and (max-width:1200px){
+    // inicio EVENTOS
+    .jumbotronEventos{
+        .callEventos{
+            grid-column: 3/7;
+        }
+    }
+    .ensamble2{
+        margin-top: 50px;
+        .carousel{
+            width: 500px;
+        }
+    }
+    #video{
+        h2{
+            font-size: 50px;
+            margin-bottom: 40px;
+        }
+        iframe{
+            width: 800px;
+            height: 400px;
         }
     }
     // fin EVENTOS
@@ -392,7 +402,6 @@ html {
     }
     // fin EVENTOS
 }
-
 @media only screen and (min-width:1400px){
     .form{
         display: flex;

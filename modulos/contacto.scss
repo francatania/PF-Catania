@@ -3,11 +3,10 @@ $negro: #141414;
 $azul: #077288;
 $sombraTitulo: $negro 1px 1px 1px;
 
-/* inicio CONTACTO */
+// inicio CONTACTO 
 .jumbotronContacto{
     background-image: linear-gradient(#b8b50009, #07728848), url(./assets/img/contactoJumbo.jpg);
 }
-
 .form{
     display: flex;
     justify-content: start;
@@ -70,7 +69,6 @@ $sombraTitulo: $negro 1px 1px 1px;
     }
     }
 }
-
-/* fin CONTACTO */
+// fin CONTACTO 
 
 

@@ -1,36 +1,28 @@
-/* inicio CLASES */
-
-    /* inicio TIPO DE CLASES */
-
+// inicio CLASES 
+    // inicio TIPO DE CLASES 
 $imagen1: url(./assets/img/clases/instrumentos.jpg);
 $imagen2: url(./assets/img/clases/produccion.jpg);
 $imagen3: url(./assets/img/clases/teoria.jpg);
-
 .jumbotronClases{
     background-image: linear-gradient(rgba(184, 181, 0, 0.0352941176), rgba(7, 114, 136, 0.2823529412)), url(./assets/img/clases2.jpg);
 }
-
 .callClases{
     background-color: #141414ad;
 }
-
 .tipoClases{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
-
 @for $i from 1 through 3 {
     .tipo#{$i} {
         @if $i == 1{
             background-image: linear-gradient(#b8b50009, #07728831), $imagen1;
         }
-
         @else if $i == 2{
             background-image: linear-gradient(#b8b50009, #07728831), $imagen2;
         }
-
         @else if $i == 3{
             background-image: linear-gradient(#b8b50009, #07728831), $imagen3;
         }
@@ -44,13 +36,11 @@ $imagen3: url(./assets/img/clases/teoria.jpg);
         margin-top:30px;
     } 
 }
-
 @for $i from 1 through 3{
     .tipo#{$i}{
         margin-bottom: 30px;
     }
 }
-
 @for $i from 1 through 3 {
     .info#{$i}{
         width: 500px;
@@ -59,14 +49,12 @@ $imagen3: url(./assets/img/clases/teoria.jpg);
         border: 2px solid #141414;
     }
 }
-
 .h2Clases{
     text-align: center;
     color: #b8b500;
     text-shadow: #141414 2px 2px;
     font-size: 50px;
 }
-
 .listClases{
     text-align: center;
     list-style: none;
@@ -75,17 +63,14 @@ $imagen3: url(./assets/img/clases/teoria.jpg);
     font-weight: 500;
     text-shadow: #141414 1px 1px;
 }
-
 .pClases{
     font-size: 20px;
     color: white;
     text-shadow: #141414 1px 1px;
     text-align: center;
 }
-
 .pProdu{
     margin-top: 30px;
 }
-
-/* fin CLASES */
+// fin CLASES 
 
